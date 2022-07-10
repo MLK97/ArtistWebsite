@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {font-family: "Century Schoolbook"; src: url("//db.onlinewebfonts.com/t/2801d9e6874d33ad4f500c4688a89755.eot"); src: url("//db.onlinewebfonts.com/t/2801d9e6874d33ad4f500c4688a89755.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2801d9e6874d33ad4f500c4688a89755.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2801d9e6874d33ad4f500c4688a89755.woff") format("woff"), url("//db.onlinewebfonts.com/t/2801d9e6874d33ad4f500c4688a89755.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2801d9e6874d33ad4f500c4688a89755.svg#Century Schoolbook") format("svg"); }
+
+
+body {
+  background-color: #F5F3EC!important;
+  font-family: 'Century Schoolbook'!important;
+}
+
+
+@import "bootstrap";
+@import '~@aws-amplify/ui-angular/theme.css';
+

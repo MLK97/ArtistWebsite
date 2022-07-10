@@ -1,0 +1,16 @@
+.tool-card {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 200px;
+  border: 2px #1D1D1D solid;
+
+  .tool-id, .tool-title, .tool-year {
+    border-right: 1px #1D1D1D solid;
+    writing-mode:sideways-lr;
+    text-align: center;
+    font-size: 30px;
+  }
+
+
+}
+
