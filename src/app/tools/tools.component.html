@@ -1,0 +1,18 @@
+<div class="container">
+  <div *ngFor="let tool of tools" class="row">
+    <a
+      class="nav-link"
+      routerLink="/linktree"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+    >
+      <div class="col-10 tool-card row">
+        <div class="col-1 tool-id">{{ tool.id }}</div>
+        <div class="col-1 tool-title">{{ tool.name }}</div>
+        <div class="col-1 tool-year">{{ tool.year }}</div>
+        <div class="col-9 tool-thumbnail">Placeholder</div>
+      </div>
+      <div class="col-2"></div>
+    </a>
+  </div>
+</div>
