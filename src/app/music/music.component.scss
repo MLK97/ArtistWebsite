@@ -1,0 +1,25 @@
+.music-card {
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 400px;
+  border: 2px #1D1D1D solid;
+
+  .music-id, .music-title, .music-instruments, .music-year {
+    border-bottom: 1px #1D1D1D solid;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .music-thumbnail {
+      img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 5px;
+        width: 75%;
+        border-radius: 500px;
+      }
+
+  }
+}
+

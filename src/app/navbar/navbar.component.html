@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <a
-    routerLink="/home"
+    routerLink="/"
     routerLinkActive="active"
     ariaCurrentWhenActive="page"
     class="navbar-brand"
@@ -30,7 +30,13 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ms-auto">
       <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="#">The Music</a>
+        <a
+          class="nav-link"
+          routerLink="/music"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+          >The Music</a
+        >
       </li>
       <!-- <li class="nav-item">
         <a class="nav-link" href="#">The Sheet Music</a>

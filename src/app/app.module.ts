@@ -9,7 +9,11 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ToolsComponent } from './tools/tools.component';
-import { LinktreeComponent } from './linktree/linktree.component';
+import { LoginComponent } from './login/login.component';
+import { LinktreeModule } from './linktree/linktree.module';
+import { MusicComponent } from './music/music.component';
+import { MusicCardComponent } from './music/music-card/music-card.component';
+import { MaterialModule } from './material.module';
 
 @NgModule({
   declarations: [
@@ -18,9 +22,17 @@ import { LinktreeComponent } from './linktree/linktree.component';
     FooterComponent,
     HomeComponent,
     ToolsComponent,
-    LinktreeComponent,
+    LoginComponent,
+    MusicComponent,
+    MusicCardComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, AmplifyAuthenticatorModule],
+  imports: [
+    MaterialModule,
+    BrowserModule,
+    AppRoutingModule,
+    AmplifyAuthenticatorModule,
+    LinktreeModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

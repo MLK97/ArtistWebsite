@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div *ngFor="let music of musics" class="col-3 music-card">
+      <div class="col-12 music-id">{{ music.id }}</div>
+      <div class="col-12 music-title">{{ music.name }}</div>
+      <div class="col-12 music-instruments">{{ music.instruments }}</div>
+      <div class="col-12 music-year">{{ music.year }}</div>
+      <div class="col-12 music-thumbnail">
+        <img src="{{ music.artwork }}" alt="" />
+      </div>
+    </div>
+  </div>
+</div>

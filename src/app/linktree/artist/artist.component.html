@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col"></div>
+    <div class="col-6 justify-content-center">
+      <img class="artist-image" src="https://picsum.photos/200" />
+      <div class="buttons d-grid gap-3">
+        <button
+          *ngFor="let link of links"
+          class="btn btn-primary"
+          type="button"
+        >
+          {{ link.name }}
+        </button>
+      </div>
+    </div>
+    <div class="col"></div>
+  </div>
+</div>

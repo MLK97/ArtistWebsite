@@ -1,3 +1,16 @@
-.who-am-i {
-  font-size: 40px;
+.who-am-i-wrapper {
+  margin-top: 50px;
+
+  .who-am-i-img {
+    margin-top: 100px;
+    img {
+    width: 100%;
+    margin-left: 50px;
+    }
+  }
+
+  .who-am-i-text {
+    font-size: 40px;
+  }
+
 }
