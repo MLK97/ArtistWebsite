@@ -14,6 +14,7 @@ import { LinktreeModule } from './linktree/linktree.module';
 import { MusicComponent } from './music/music.component';
 import { MusicCardComponent } from './music/music-card/music-card.component';
 import { MaterialModule } from './material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { MaterialModule } from './material.module';
     AppRoutingModule,
     AmplifyAuthenticatorModule,
     LinktreeModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
