@@ -62,7 +62,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/aws-exports.js"
+            ]
           },
           "configurations": {
             "production": {
