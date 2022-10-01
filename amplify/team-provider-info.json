@@ -1,0 +1,20 @@
+{
+  "artist": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-artistwebsite-artist-164228-authRole",
+      "UnauthRoleArn": "arn:aws:iam::908705395533:role/amplify-artistwebsite-artist-164228-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::908705395533:role/amplify-artistwebsite-artist-164228-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-artistwebsite-artist-164228-deployment",
+      "UnauthRoleName": "amplify-artistwebsite-artist-164228-unauthRole",
+      "StackName": "amplify-artistwebsite-artist-164228",
+      "StackId": "arn:aws:cloudformation:eu-central-1:908705395533:stack/amplify-artistwebsite-artist-164228/8486dc70-005e-11ed-82a0-0ae79e4c5888",
+      "AmplifyAppId": "dr7mstrvyp92"
+    },
+    "categories": {
+      "auth": {
+        "artistwebsite01deaed4": {}
+      }
+    }
+  }
+}
