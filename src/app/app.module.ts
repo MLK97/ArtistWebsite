@@ -1,3 +1,4 @@
+import { MusicModule } from './music/music.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -11,8 +12,6 @@ import { HomeComponent } from './home/home.component';
 import { ToolsComponent } from './tools/tools.component';
 import { LoginComponent } from './login/login.component';
 import { LinktreeModule } from './linktree/linktree.module';
-import { MusicComponent } from './music/music.component';
-import { MusicCardComponent } from './music/music-card/music-card.component';
 import { MaterialModule } from './material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -24,16 +23,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     ToolsComponent,
     LoginComponent,
-    MusicComponent,
-    MusicCardComponent,
   ],
   imports: [
-    MaterialModule,
     BrowserModule,
+    MusicModule,
     AppRoutingModule,
     AmplifyAuthenticatorModule,
     LinktreeModule,
     BrowserAnimationsModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

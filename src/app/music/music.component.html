@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
   <div class="row">
     <div *ngFor="let music of musics" class="col-3 music-card">
       <div class="col-12 music-id">{{ music.id }}</div>
@@ -10,4 +10,12 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
+<mat-grid-list cols="3" rowHeight="60vh">
+  <mat-grid-tile *ngFor="let music of musics"
+    ><app-music-card
+      [music]="music"
+      (click)="onCardClick($event)"
+    ></app-music-card
+  ></mat-grid-tile>
+</mat-grid-list>

@@ -1,3 +1,4 @@
+import { MusicDetailComponent } from './music/music-detail/music-detail.component';
 import { NgModule } from '@angular/core';
 import { LoginComponent } from './login/login.component';
 import { RouterModule, Routes } from '@angular/router';
@@ -10,9 +11,17 @@ import { MusicComponent } from './music/music.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'tools', component: ToolsComponent },
-  { path: 'music', component: MusicComponent },
+  {
+    path: 'music',
+    component: MusicComponent,
+    children: [{ path: ':id', component: MusicDetailComponent }],
+  },
   { path: 'linktree/login', component: LoginComponent },
-  { path: 'linktree/artist/:artist', component: LinktreeArtistComponent },
+  {
+    path: 'linktree/artist/:artist',
+    component: LinktreeArtistComponent,
+    outlet: 'main',
+  },
 ];
 
 @NgModule({

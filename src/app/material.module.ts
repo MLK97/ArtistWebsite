@@ -11,7 +11,7 @@ import { NgModule } from '@angular/core';
 // import {MatBadgeModule} from '@angular/material/badge';
 // import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 // import {MatButtonToggleModule} from '@angular/material/button-toggle';
-// import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
 // import {MatCheckboxModule} from '@angular/material/checkbox';
 // import {MatChipsModule} from '@angular/material/chips';
 // import {MatStepperModule} from '@angular/material/stepper';
@@ -19,9 +19,9 @@ import { NgModule } from '@angular/core';
 // import {MatDialogModule} from '@angular/material/dialog';
 // import {MatDividerModule} from '@angular/material/divider';
 // import {MatExpansionModule} from '@angular/material/expansion';
-// import {MatGridListModule} from '@angular/material/grid-list';
+import { MatGridListModule } from '@angular/material/grid-list';
 // import {MatMenuModule} from '@angular/material/menu';
-// import {MatNativeDateModule, MatRippleModule} from '@angular/material/core';
+import { MatNativeDateModule, MatRippleModule } from '@angular/material/core';
 // import {MatPaginatorModule} from '@angular/material/paginator';
 // import {MatProgressBarModule} from '@angular/material/progress-bar';
 // import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
@@ -57,7 +57,7 @@ import { MatListModule } from '@angular/material/list';
     // MatBadgeModule,
     // MatBottomSheetModule,
     // MatButtonToggleModule,
-    // MatCardModule,
+    MatCardModule,
     // MatCheckboxModule,
     // MatChipsModule,
     // MatStepperModule,
@@ -65,14 +65,14 @@ import { MatListModule } from '@angular/material/list';
     // MatDialogModule,
     // MatDividerModule,
     // MatExpansionModule,
-    // MatGridListModule,
+    MatGridListModule,
     // MatMenuModule,
     // MatNativeDateModule,
     // MatPaginatorModule,
     // MatProgressBarModule,
     // MatProgressSpinnerModule,
     // MatRadioModule,
-    // MatRippleModule,
+    MatRippleModule,
     // MatSliderModule,
     // MatSlideToggleModule,
     // MatSnackBarModule,

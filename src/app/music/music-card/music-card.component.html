@@ -1,1 +1,12 @@
-<p>music-card works!</p>
+<mat-card matRipple>
+  <mat-card-title>{{ music.id }}</mat-card-title>
+  <mat-card-title>{{ music.name }}</mat-card-title>
+  <mat-card-title>{{ music.instruments }}</mat-card-title>
+  <mat-card-title>{{ music.year }}</mat-card-title>
+
+  <mat-card-content
+    [ngStyle]="{ 'background-image': 'url(' + music.artwork + ')' }"
+  >
+    <!-- <img src="{{ music.artwork }}" alt="album artwork" /> -->
+  </mat-card-content>
+</mat-card>

@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { MusicCardComponent } from './music-card/music-card.component';
+import { Album } from './music-card/musics';
 
 @Component({
   selector: 'app-music',
@@ -6,15 +9,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./music.component.scss'],
 })
 export class MusicComponent implements OnInit {
-  musics: {
-    id: string;
-    name: string;
-    instruments: string;
-    year: number;
-    artwork: string;
-  }[] = [
+  musics: Album[] = [
     {
       id: 'III.',
+      route: '3',
       name: 'Black Skies and Shimmering Vibrations',
       instruments: 'Synth',
       year: 2022,
@@ -22,6 +20,7 @@ export class MusicComponent implements OnInit {
     },
     {
       id: 'II.',
+      route: '2',
       name: 'The Challenge of Solitude',
       instruments: 'Piano',
       year: 2021,
@@ -29,13 +28,20 @@ export class MusicComponent implements OnInit {
     },
     {
       id: 'I.',
+      route: '1',
       name: 'Loft',
       instruments: 'Synth/Strings/Piano',
       year: 2019,
       artwork: '',
     },
   ];
-  constructor() {}
+  constructor(private router: Router, private route: ActivatedRoute) {}
 
+  @ViewChild(MusicCardComponent) musicCard!: MusicCardComponent;
   ngOnInit(): void {}
+
+  public onCardClick(evt: MouseEvent) {
+    this.router.navigate(['1'], { relativeTo: this.route });
+    console.log(evt);
+  }
 }
