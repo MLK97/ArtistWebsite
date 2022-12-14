@@ -1,3 +1,5 @@
+@import '~locomotive-scroll/dist/locomotive-scroll.css';
+
 .who-am-i-wrapper {
   margin-top: 50px;
 
@@ -5,7 +7,7 @@
     margin-top: 100px;
     img {
     width: 100%;
-    margin-left: 50px;
+    margin-left: 0px;
     }
   }
 
@@ -13,4 +15,20 @@
     font-size: 40px;
   }
 
+}
+
+.lerp-wrap {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1.25rem;
+  line-height: 1.1;
+  span {
+    width:100px;
+    height:100px;
+    display: inline-flex;
+    justify-content:center;
+    align-items:center;
+    font-size: clamp(32px, 3vw, 8vw);
+    background:#fff;
+  }
 }
